@@ -1,22 +1,22 @@
 class AgentUsage < Formula
   desc "Display AI agent rate limit usage in your tmux status bar"
   homepage "https://github.com/raine/tmux-agent-usage"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/raine/tmux-agent-usage/releases/download/v0.1.0/agent-usage-darwin-arm64.tar.gz"
-      sha256 "603cdbacfe746b20dd9165a85bb18bca47b0d7f4045a31e42fc319fe591e6420"
+      url "https://github.com/raine/tmux-agent-usage/releases/download/v0.1.1/agent-usage-darwin-arm64.tar.gz"
+      sha256 "e0802e843acbdd9d822e50f02ae34366ee99ae603e68ac9d30fe106b38ed2e11"
     else
-      url "https://github.com/raine/tmux-agent-usage/releases/download/v0.1.0/agent-usage-darwin-amd64.tar.gz"
-      sha256 "81c129d3ef51bead34f8409115b91ce56b4dcb4348e3cd35cdb986b87b2afc1f"
+      url "https://github.com/raine/tmux-agent-usage/releases/download/v0.1.1/agent-usage-darwin-amd64.tar.gz"
+      sha256 "b0446ad20afe3db5cce5e7b3c5aa08f5eed17be9534ba7edefb3d45124739b4a"
     end
   end
 
   on_linux do
-    url "https://github.com/raine/tmux-agent-usage/releases/download/v0.1.0/agent-usage-linux-amd64.tar.gz"
-    sha256 "287e27e03781a3fe1c68d5b0e0a5423a8c8a10dbdf123a84023ee3d2cc5fa0d8"
+    url "https://github.com/raine/tmux-agent-usage/releases/download/v0.1.1/agent-usage-linux-amd64.tar.gz"
+    sha256 "976f9dbb64e2b2781a780a6693327790732f1bc67e7c2c1d6aa41b421f215f9d"
   end
 
   def install
